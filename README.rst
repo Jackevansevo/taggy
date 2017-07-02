@@ -104,12 +104,17 @@ To preview a given action:
 FAQ
 ---
 
-- Why only support Python >3.4
-  - because it's <CURRENT YEAR>
-- Where are the tests?
-  - Non existent (so far)
-- Can you make it support X?
-  - Open an issue / PR
+* Why only support Python >3.4
+
+  * because it's <CURRENT YEAR>
+
+* Where are the tests?
+
+  * Coming soon
+
+* Can you make it support X?
+
+  * Open and issue and I'll do my best, or submit a PR
 
 
 TODO
