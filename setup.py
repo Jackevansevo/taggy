@@ -3,11 +3,11 @@ from setuptools import setup
 setup(
     name='taggy',
     description='Command line utility to help create SemVer tags.',
-    version='0.1.0',
+    version='0.1.1',
     py_modules=['taggy'],
     author_email='jack@evans.gb.net',
     license='MIT',
-    url='https://github.com/Jackevansevo/tagger',
+    url='https://github.com/Jackevansevo/taggy',
     install_requires=['semver'],
     entry_points={'console_scripts': ['taggy=taggy:main']},
     zip_safe=False,
