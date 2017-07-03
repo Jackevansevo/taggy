@@ -78,7 +78,7 @@ In any git repository type:
     ❯ taggy [major/minor/patch]      
 
 
-If the version bump flag is omitted an input prompt will appear:
+If the version bump positional argument is omitted an input prompt will appear:
 
 .. code-block:: bash
 
