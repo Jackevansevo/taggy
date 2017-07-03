@@ -108,13 +108,3 @@ To write a custom message:
 .. code-block:: bash
 
     ❯ taggy minor [--message/-m] "My tag: {}"
-
-
-TODO
-----
-- Tests
-- Continuous Integration
-- Documentation
-- Demo screencast (needs redoing)
-- File globs for find and replace
-- Find and replace sed preview
