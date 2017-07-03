@@ -13,6 +13,8 @@ from typing import Optional, Tuple
 
 from semver import bump_major, bump_minor, bump_patch  # type: ignore
 
+from taggy import __version__
+
 DESC = 'Command line utility to help create SemVer git tags.'
 
 # SemVer numeric conventions
@@ -32,6 +34,7 @@ def get_args() -> Namespace:
     parser.add_argument('--preview', action="store_true")
     parser.add_argument('--files', '-f', type=FileType('r'), nargs='*')
     parser.add_argument('--message', '-m', type=str, default="version {}")
+    parser.add_argument('--version', action="store_true")
     return parser.parse_args()
 
 
@@ -128,14 +131,18 @@ def runchecks(cwd):
 
 def main():
 
+    # Parse command line arguments
+    args = get_args()
+
+    if args.version:
+        print("Current version:", __version__)
+        sys.exit(0)
+
     # Get directory from where script was called
     cwd = os.getcwd()
 
     # Validate current environment before proceeding
     runchecks(cwd)
-
-    # Parse command line arguments
-    args = get_args()
 
     # Acquire current git tag
     tag = get_tag(cwd)
