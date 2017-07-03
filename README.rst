@@ -54,27 +54,28 @@ To get help:
 .. code-block:: none
 
     ❯ taggy --help      
-    usage: taggy [-h] [--preview] [--major | --minor | --patch]
-                 [files [files ...]]
 
-    Command line utility to help create SemVer tags.
+    usage: taggy [-h] [--preview] [--files [FILES [FILES ...]]]
+                 [--message MESSAGE]
+                 [{major,minor,patch}]
+
+    Command line utility to help create SemVer git tags.
 
     positional arguments:
-      files
+      {major,minor,patch}
 
     optional arguments:
-      -h, --help   show this help message and exit
+      -h, --help            show this help message and exit
       --preview
-      --major, -M
-      --minor, -m
-      --patch, -p
+      --files [FILES [FILES ...]], -f [FILES [FILES ...]]
+      --message MESSAGE, -m MESSAGE
 
 
 In any git repository type:
 
 .. code-block:: bash
 
-    ❯ taggy -[M/m/p]      
+    ❯ taggy [major/minor/patch]      
 
 
 If the version bump flag is omitted an input prompt will appear:
@@ -89,16 +90,30 @@ To create a new git tag representing a patch:
 
 .. code-block:: bash
 
-    ❯ taggy -p
+    ❯ taggy patch
 
 
 To preview a given action:
 
 .. code-block:: bash
 
-    ❯ taggy -M --preview
+    ❯ taggy major --preview
     - 1.1.1
     + 2.0.0
+
+
+To find and replace existing tags within files:
+    
+.. code-block:: bash
+
+    ❯ taggy minor [--files/-f] setup.py docs/conf.py
+
+
+To write a custom message:
+
+.. code-block:: bash
+
+    ❯ taggy minor [--message/-m] "My tag: {}"
 
 
 FAQ
