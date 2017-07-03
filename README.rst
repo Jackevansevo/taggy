@@ -6,29 +6,6 @@ Command line utility to help create SemVer git tags.
 
 ----
 
-For those of us too lazy to repeatedly type:
-
-.. code-block:: bash
-
-    ❯ git describe
-
-Followed by:
-
-.. code-block:: bash
-
-    ❯ git tag -a "x.y.z" -m "blah lah blah"
-
-Then having to update package metadata within projects files. Either inside a
-text editor or on the command line:
-
-.. code-block:: bash
-
-    ❯ sed -ie "s/0\.0\.1/0.0.2/g" setup.py
-
-
-Often people cook up shell scripts per project to automate the tagging process.
-This tool is an attempt at something project agnostic.
-
 
 Installation
 ------------
