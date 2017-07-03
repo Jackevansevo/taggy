@@ -1,0 +1,9 @@
+# Core requirements
+semver
+
+# Dev requirements
+flake8
+isort
+mypy
+pytest
+pytest-cov
