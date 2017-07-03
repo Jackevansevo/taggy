@@ -1,10 +1,9 @@
-from taggy import __version__
 from setuptools import setup
 
 setup(
     name='taggy',
     description='Command line utility to help create SemVer tags.',
-    version=__version__,
+    version='0.2.0',
     py_modules=['taggy'],
     author_email='jack@evans.gb.net',
     license='MIT',
