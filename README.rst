@@ -2,7 +2,7 @@
 Taggy
 =====
 
-Command line utility to help create SemVer tags.
+Command line utility to help create SemVer git tags.
 
 ----
 
