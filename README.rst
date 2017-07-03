@@ -33,7 +33,7 @@ This tool is an attempt at something project agnostic.
 Installation
 ------------
 
-Requires Python >3.4 (setuptools.run)
+Requires Python >3.4
 
 .. code-block:: bash
 
@@ -110,27 +110,10 @@ To write a custom message:
     ❯ taggy minor [--message/-m] "My tag: {}"
 
 
-FAQ
----
-
-* Why only support Python >3.4
-
-  * because it's <CURRENT YEAR>
-
-* Where are the tests?
-
-  * Coming soon
-
-* Can you make it support X?
-
-  * Open and issue and I'll do my best, or submit a PR
-
-
 TODO
 ----
 - Tests
 - Continuous Integration
-- Install instructions
 - Documentation
 - Demo screencast (needs redoing)
 - File globs for find and replace
