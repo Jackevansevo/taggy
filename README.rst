@@ -6,12 +6,6 @@ Command line utility to help create SemVer git tags.
 
 ----
 
-.. raw:: html
-
-    <a href="https://asciinema.org/a/127416" target="_blank"><img src="https://asciinema.org/a/127416.png" /></a>
-
-----
-
 For those of us too lazy to repeatedly type:
 
 .. code-block:: bash
