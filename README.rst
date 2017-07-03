@@ -138,7 +138,6 @@ TODO
 - Continuous Integration
 - Install instructions
 - Documentation
-- Demo screencast
+- Demo screencast (needs redoing)
 - File globs for find and replace
 - Find and replace sed preview
-- Handle prefixes better
