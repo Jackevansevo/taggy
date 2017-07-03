@@ -164,15 +164,15 @@ def main():
     bump_fns = {'major': bump_major, 'minor': bump_minor, 'patch': bump_patch}
     next_tag = bump_fns[args.bump](tag)
 
+    # If it's only a preview, exit
+    if args.preview:
+        old, new = ('{}{}\n'.format(prefix or '', v) for v in (tag, next_tag))
+        print(''.join(ndiff([old], [new])))
+        sys.exit(0)
+
     # If previous tag had a prefix, rejoin the prefix after bumping
     if prefix is not None:
         next_tag = prefix + next_tag
-
-    # If it's only a preview, exit
-    if args.preview:
-        old, new = ('{}\n'.format(v) for v in (tag, next_tag))
-        print(''.join(ndiff([old], [new])), end="")
-        sys.exit(0)
 
     # Find & replace SemVer tag inside files (ignoring prefix)
     if args.files:
