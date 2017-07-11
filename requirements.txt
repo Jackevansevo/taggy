@@ -1,5 +1,5 @@
 # Core requirements
-semver
+semver==2.7.7
 
 # Dev requirements
 flake8
