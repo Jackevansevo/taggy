@@ -37,9 +37,7 @@ setup(
     packages=['taggy'],
     setup_requires=['pytest-runner'],
     tests_require=test_requirements,
-    install_requires=[
-        'semver'
-    ],
+    install_requires=['crayons'],
     python_requires='>=3.4',
     entry_points={
         'console_scripts': [
