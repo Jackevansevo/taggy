@@ -18,7 +18,7 @@ Requires Python >3.4::
 Basic Usage 
 -----------
 
-To get help:::
+To get help::
 
     λ taggy --help      
 
@@ -38,34 +38,34 @@ To get help:::
       --message MESSAGE, -m MESSAGE
 
 
-In any git repository type:::
+In any git repository type::
 
     λ taggy [major/minor/patch]      
 
 
-If the version bump positional argument is omitted an input prompt will appear:::
+If the version bump positional argument is omitted an input prompt will appear::
 
     λ taggy       
     Choose: [M]ajor/[m]inor/[p]atch: 
 
 
-To create a new git tag representing a patch:::
+To create a new git tag representing a patch::
 
     λ taggy patch
 
 
-To preview a given action:::
+To preview a given action::
 
     λ taggy major --preview
     - 1.1.1
     + 2.0.0
 
 
-To find and replace existing tags within files:::
+To find and replace existing tags within files::
     
     λ taggy minor [--files/-f] setup.py docs/conf.py
 
 
-To write a custom message:::
+To write a custom message::
 
     λ taggy minor [--message/-m] "My tag: {}"
