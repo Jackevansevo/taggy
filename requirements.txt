@@ -9,5 +9,5 @@ py==1.6.0
 pycodestyle==2.4.0
 pyflakes==2.0.0
 pytest==3.8.0
-pytest-cov==2.5.1
+pytest-cov==2.6.0
 typed-ast==1.1.0
