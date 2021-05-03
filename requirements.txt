@@ -4,7 +4,7 @@ crayons==0.4.0
 flake8==3.9.1
 isort==5.8.0
 mccabe==0.6.1
-mypy==0.670
+mypy==0.812
 py==1.7.0
 pycodestyle==2.5.0
 pyflakes==2.1.0
