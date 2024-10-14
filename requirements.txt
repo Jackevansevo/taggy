@@ -2,7 +2,7 @@ colorama==0.4.6
 coverage==7.6.3
 crayons==0.4.0
 flake8==7.1.1
-isort==4.3.4
+isort==5.13.2
 mccabe==0.6.1
 mypy==0.670
 py==1.7.0
